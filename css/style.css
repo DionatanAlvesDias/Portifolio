@@ -47,6 +47,34 @@
     transform: rotate(-45deg) translate(.3rem, -.40rem);
 }
 
+.hamburguer span {
+    position: absolute;
+    left: 3rem;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad5389;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid #ad5389;
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu.hamburguer:hover span{
+    opacity: 1;
+}
+
 header {
     width: 100%;
     height: 100vh;
