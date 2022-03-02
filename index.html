@@ -209,6 +209,31 @@
         </div>
       </div>
     </section>
+    <section class="sessao-orcamento">
+      <div class="orcamento-wrapper">
+        <h1>Faça um Orçamento!</h1>
+        <form class="formulario">
+          <label class="qtd-paginas">Quantidade de paginas:</label>
+          <input type="number" min="1" name="qtd" id="qtd">
+          <label for="js">Devera conter JavaScript ?</label>
+          <input type="checkbox" name="js" id="js">
+          <label>Layout</label>
+          <div class="group-layout">
+            <div>
+              <input type="radio" name="layout" id="layout-sim">
+              <label for="layout-sim">Preciso de um layout ?</label>
+            </div>
+            <div>
+              <input type="radio" name="layout" id="layout-nao">
+              <label for="layout-nao">Já tenho um layout !</label>
+            </div>
+            <label for="prazo" class="prazo">Prazo</label>
+            <input type="range" name="prazo" id="prazo">
+            <button class="btn-orcamento" type="submit">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </section>
   </body>
   <script src="js/scripts.js"></script>
 </html>
